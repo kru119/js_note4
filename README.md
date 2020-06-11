@@ -116,7 +116,7 @@ var person = new Person();
 alert(person.constructor); //Animal 
 ```
 这个时候，person的构造函数成了Animal，怎么解释？
-![](https://www.jb51.net/upload/201010/20101018004632634.png)
+!(https://www.jb51.net/upload/201010/20101018004632634.png)
 注：图中的虚线表示Person默认的prototype指向(只作参考的作用)。但是我们将Person.prototype指向了new Animal。
 此时，Person的prototype指向的是Animal的实例，所以person的constructor为Animal这个构造函数。
 
