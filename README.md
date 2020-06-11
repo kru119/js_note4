@@ -82,7 +82,7 @@ alert(Dog === Dog.prototype.constructor);//true
 !(https://www.jb51.net/upload/201010/20101018004308867.gif)
 constructor属性来自何方
 我们来看一下Function构造String的构造过程：
-![](https://www.jb51.net/upload/201010/20101018004330346.png)
+!(https://www.jb51.net/upload/201010/20101018004330346.png)
 注：Function构造任何函数对象的过程都是一样的，所以说不管是String,Boolean,Number等内置对象，还是用户自定义对象,其构造过程都和上图一样。这里String只是一个代表而矣！
 图中可以看出constructor是Function在创建函数对象时产生的，也正如'prototype与constructor的关系'中讲的那样，constructor是函数对象prototype链中的一个属性。即String=== String.prototype.constructor。
 ```
@@ -116,7 +116,7 @@ var person = new Person();
 alert(person.constructor); //Animal 
 ```
 这个时候，person的构造函数成了Animal，怎么解释？
-!(https://www.jb51.net/upload/201010/20101018004632634.png)
+![](https://www.jb51.net/upload/201010/20101018004632634.png)
 注：图中的虚线表示Person默认的prototype指向(只作参考的作用)。但是我们将Person.prototype指向了new Animal。
 此时，Person的prototype指向的是Animal的实例，所以person的constructor为Animal这个构造函数。
 
